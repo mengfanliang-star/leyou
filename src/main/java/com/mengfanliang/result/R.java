@@ -65,6 +65,20 @@ public class R {
         return r;
     }
 
+    public static R created(){
+        R r=new R();
+        r.setStatus(ResultCode.CREATED.getStatus());
+        r.setMsg(ResultCode.CREATED.getMsg());
+        return r;
+    }
+
+    public static R deleted(){
+        R r=new R();
+        r.setStatus(ResultCode.DELETED.getStatus());
+        r.setMsg(ResultCode.DELETED.getMsg());
+        return r;
+    }
+
     public static R myCode(Integer status,String msg){
         R r=new R();
         r.setStatus(status);
